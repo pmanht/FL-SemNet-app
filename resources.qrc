@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="blueIcons">
+    <file>asserts/icons/blue/search.png</file>
+    <file>asserts/icons/blue/menu.png</file>
+    <file>asserts/icons/blue/user.png</file>
+  </qresource>
+</RCC>
