@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>968</width>
-    <height>555</height>
+    <width>1101</width>
+    <height>568</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@
 	background-color: #eff9fe;
 }
 
-#leftMenu{
+#frame_11{
 	background-color: #2596be;
 }
 
@@ -53,7 +53,7 @@ QLineEdit {
 	border-radius: 10px;
 }
 
-#widget_4, #widget_5, #profileCont {
+#widget_4, #widget_5, #profileCont, #frame_15 {
 	background-color: #fefeff;
 	border-radius: 20px;
 }
@@ -91,13 +91,13 @@ QLineEdit {
      <number>0</number>
     </property>
     <item>
-     <widget class="QWidget" name="leftMenu" native="true">
+     <widget class="QCustomSlideMenu" name="leftMenu" native="true">
       <layout class="QVBoxLayout" name="verticalLayout_8">
        <property name="spacing">
         <number>0</number>
        </property>
        <property name="leftMargin">
-        <number>15</number>
+        <number>0</number>
        </property>
        <property name="topMargin">
         <number>0</number>
@@ -121,7 +121,7 @@ QLineEdit {
            <number>0</number>
           </property>
           <property name="leftMargin">
-           <number>0</number>
+           <number>15</number>
           </property>
           <property name="topMargin">
            <number>0</number>
@@ -232,7 +232,7 @@ QLineEdit {
                 <item>
                  <widget class="QPushButton" name="pushButton_8">
                   <property name="text">
-                   <string>PushButton</string>
+                   <string>Connections</string>
                   </property>
                   <property name="icon">
                    <iconset resource="resources.qrc">
@@ -249,7 +249,7 @@ QLineEdit {
                 <item>
                  <widget class="QPushButton" name="pushButton_9">
                   <property name="text">
-                   <string>PushButton</string>
+                   <string>Statistic</string>
                   </property>
                   <property name="icon">
                    <iconset resource="resources.qrc">
@@ -266,7 +266,7 @@ QLineEdit {
                 <item>
                  <widget class="QPushButton" name="pushButton_10">
                   <property name="text">
-                   <string>PushButton</string>
+                   <string>Setting</string>
                   </property>
                   <property name="icon">
                    <iconset resource="resources.qrc">
@@ -1415,7 +1415,7 @@ QLineEdit {
      </widget>
     </item>
     <item alignment="Qt::AlignTop">
-     <widget class="QWidget" name="profileCont" native="true">
+     <widget class="QCustomSlideMenu" name="profileCont" native="true">
       <property name="minimumSize">
        <size>
         <width>100</width>
@@ -1433,10 +1433,10 @@ QLineEdit {
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_13">
           <property name="spacing">
-           <number>6</number>
+           <number>10</number>
           </property>
           <property name="leftMargin">
-           <number>0</number>
+           <number>6</number>
           </property>
           <property name="topMargin">
            <number>0</number>
@@ -1545,6 +1545,14 @@ QLineEdit {
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomSlideMenu</class>
+   <extends>QWidget</extends>
+   <header location="global">Custom_Widget.Widgets.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="resources.qrc"/>
  </resources>
